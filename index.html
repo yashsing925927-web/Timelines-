@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f8eee8">
+<title>Our Little Timeline ♡</title>
+<style>
+:root{--cream:#fffaf4;--paper:#fffdf9;--pink:#d99aa5;--rose:#b86f7e;--ink:#514448;--muted:#8a7779;--line:#ead7d5}
+*{box-sizing:border-box}
+body{margin:0;background:radial-gradient(circle at 10% 8%,#f7e3e4 0,transparent 28%),radial-gradient(circle at 92% 25%,#f2e4d7 0,transparent 26%),var(--cream);color:var(--ink);font-family:Georgia,'Times New Roman',serif}
+.wrap{max-width:760px;margin:auto;padding:22px 16px 48px}
+.hero{text-align:center;padding:32px 14px 25px}
+.eyebrow{font:12px/1.4 Arial,sans-serif;letter-spacing:3px;text-transform:uppercase;color:var(--rose)}
+h1{font-size:clamp(34px,8vw,56px);font-weight:normal;line-height:1.05;margin:14px 0 12px}
+h1 em{color:var(--rose);font-weight:normal}
+.intro{font-size:17px;line-height:1.65;max-width:520px;margin:0 auto;color:#78686b}
+.music{border:1px solid #e7c8cc;background:#fff9f8;color:#8e5260;padding:11px 17px;border-radius:999px;font-size:14px;cursor:pointer;margin-top:20px;box-shadow:0 4px 12px #b86f7e12}
+.music:active{transform:scale(.98)}
+.note{font:12px Arial,sans-serif;color:#9b8588;margin-top:8px}
+.timeline{position:relative;margin:25px auto 0;padding:8px 0}
+.timeline:before{content:"";position:absolute;left:20px;top:12px;bottom:12px;width:2px;background:linear-gradient(var(--pink),#e9d9ca)}
+.item{position:relative;padding:0 0 24px 52px}
+.dot{position:absolute;left:12px;top:18px;width:18px;height:18px;border-radius:50%;background:#fff8f7;border:3px solid var(--pink);box-shadow:0 0 0 4px #f7e7e4}
+.card{background:rgba(255,253,249,.92);border:1px solid #efdfdc;border-radius:17px;padding:18px 18px 17px;box-shadow:0 7px 22px #77505b0d;position:relative}
+.card:after{content:"♡";position:absolute;right:14px;top:10px;color:#d8a0a8;font-size:20px}
+.date{font:700 11px Arial,sans-serif;letter-spacing:1.8px;text-transform:uppercase;color:var(--rose);margin:0 28px 8px 0}
+h2{font-weight:normal;font-size:23px;margin:0 0 8px}
+.card p{font-size:15px;line-height:1.65;margin:0;color:#76666a}
+.final{margin:14px 0 26px;padding:23px 20px;text-align:center;background:#f8e9e8;border:1px dashed #d9a4ac;border-radius:18px;font-size:19px;line-height:1.6}
+.final small{display:block;font:12px Arial,sans-serif;letter-spacing:2px;text-transform:uppercase;color:#a66c77;margin-bottom:8px}
+.next{display:block;text-align:center;text-decoration:none;background:#a96575;color:white;padding:15px 20px;border-radius:999px;margin:0 auto;max-width:330px;box-shadow:0 7px 16px #a9657528}
+.next span{display:block;font:11px Arial,sans-serif;opacity:.85;margin-top:5px;letter-spacing:.5px}
+footer{text-align:center;margin-top:28px;font-size:13px;color:#9a8588}
+.heart{color:#b86f7e}
+@media(min-width:620px){.timeline:before{left:26px}.item{padding-left:64px}.dot{left:18px}.card{padding:21px 24px}}
+</style>
+</head>
+<body>
+<main class="wrap">
+  <header class="hero">
+    <div class="eyebrow">a few dates, a thousand feelings</div>
+    <h1>Our Little <em>Timeline</em> ♡</h1>
+    <p class="intro">Every little moment led to another, and somehow they became <i>our</i> story. Here are a few pages from it, kept just for you.</p>
+    <button class="music" id="musicBtn" type="button">♫ Play our little soundtrack</button>
+    <div class="note" id="musicNote">Tap to start the soft guitar music · tap again to pause</div>
+    <audio id="bgm" loop preload="metadata">
+      <source src="little-moments.mp3" type="audio/mpeg">
+    </audio>
+  </header>
+
+  <section class="timeline" aria-label="Our relationship timeline">
+    <article class="item"><span class="dot"></span><div class="card">
+      <div class="date">6 May</div><h2>Where our walks began 🌿</h2>
+      <p>We started going for walks together. Things felt happy and normal, and days passed with little conversations, familiar paths, and moments that quietly became part of our story.</p>
+    </div></article>
+    <article class="item"><span class="dot"></span><div class="card">
+      <div class="date">27 July</div><h2>My favourite birthday 🎂</h2>
+      <p>It became my best birthday because you were there with me. Sometimes a person being part of your day is what makes it unforgettable.</p>
+    </div></article>
+    <article class="item"><span class="dot"></span><div class="card">
+      <div class="date">18 September</div><h2>One question, one website 💌</h2>
+      <p>You asked me to propose, and I made a whole website for it. A little corner of the internet, made to ask you something that mattered to me.</p>
+    </div></article>
+    <article class="item"><span class="dot"></span><div class="card">
+      <div class="date">19 September</div><h2>Officially us 🫶🏻</h2>
+      <p>The day we began our relationship. A new little chapter, with a new name for what we already meant to each other.</p>
+    </div></article>
+    <article class="item"><span class="dot"></span><div class="card">
+      <div class="date">20 September</div><h2>Our first proper hug ♡</h2>
+      <p>Our first proper, tight couple hug — one of those simple moments that can say more than a whole paragraph.</p>
+    </div></article>
+    <article class="item"><span class="dot"></span><div class="card">
+      <div class="date">21 September</div><h2>Our first lip kiss 💋</h2>
+      <p>Our first normal lip kiss. A little first that became a date worth keeping in our story.</p>
+    </div></article>
+    <article class="item"><span class="dot"></span><div class="card">
+      <div class="date">22 September</div><h2>A new little first 💗</h2>
+      <p>Our first French kiss — another memory from the beginning of us.</p>
+    </div></article>
+    <article class="item"><span class="dot"></span><div class="card">
+      <div class="date">19 October</div><h2>One month of us 🥹</h2>
+      <p>We sent each other our birthday-style paragraphs for our one-month anniversary at exactly midnight — at the same time, without planning it. A tiny coincidence I’ll always remember.</p>
+    </div></article>
+    <article class="item"><span class="dot"></span><div class="card">
+      <div class="date">29 October</div><h2>The best day of the whole year 🎀</h2>
+      <p>Your birthday. A day that deserves its own little adventure, its own surprises, and all the love and happiness I hope you feel.</p>
+    </div></article>
+  </section>
+
+  <div class="final">
+    <small>one little thought</small>
+    We have dates for some memories, pictures for others, and a thousand little moments that no calendar could ever hold. <span class="heart">♡</span>
+  </div>
+
+  <a class="next" href="message.html">There's one more thing for you ♡<span>A little message, just for you</span></a>
+  <footer>made with care, for Aabhyanshi <span class="heart">♥</span></footer>
+</main>
+<script>
+const btn=document.getElementById('musicBtn'), audio=document.getElementById('bgm'), note=document.getElementById('musicNote');
+btn.addEventListener('click', async()=>{
+  if(audio.paused){
+    try{await audio.play();btn.textContent='♫ Pause our little soundtrack';note.textContent='A little music for our little memories ♡';}
+    catch(e){note.textContent='Music could not start. Check that little-moments.mp3 is uploaded beside index.html.';}
+  }else{audio.pause();btn.textContent='♫ Play our little soundtrack';note.textContent='Paused — tap when you want the music back ♡';}
+});
+</script>
+</body>
+</html>
